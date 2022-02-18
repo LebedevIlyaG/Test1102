@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../Test1102
+  - make -j
+  - ./Test1102/Test1102
+notifications:
+  email: false
